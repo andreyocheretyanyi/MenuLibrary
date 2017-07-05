@@ -67,54 +67,6 @@ public class MenuLibraryClass extends RelativeLayout {
         setOnClickListeners();
     }
 
-    private void setAttFromXML(TypedArray arr){
-        int iconResId = arr.getResourceId(R.styleable.MenuLibraryClass_firstMenuItemIcon,0);
-        if(iconResId != 0)
-            menuItemsIcon[0].setImageResource(iconResId);
-        iconResId = arr.getResourceId(R.styleable.MenuLibraryClass_secondMenuItemIcon,0);
-        if(iconResId != 0)
-            menuItemsIcon[1].setImageResource(iconResId);
-        iconResId = arr.getResourceId(R.styleable.MenuLibraryClass_thirdMenuItemIcon,0);
-        if(iconResId != 0)
-            menuItemsIcon[2].setImageResource(iconResId);
-        iconResId = arr.getResourceId(R.styleable.MenuLibraryClass_fourthMenuItemIcon,0);
-        if(iconResId != 0)
-            menuItemsIcon[3].setImageResource(iconResId);
-        iconResId = arr.getResourceId(R.styleable.MenuLibraryClass_fifthMenuItemIcon,0);
-        if(iconResId != 0)
-            menuItemsIcon[4].setImageResource(iconResId);
-
-        int backgroundResId = arr.getResourceId(R.styleable.MenuLibraryClass_firstMenuItemColor,0);
-        if(backgroundResId != 0)
-            menuItems[0].setBackgroundResource(backgroundResId);
-        backgroundResId = arr.getResourceId(R.styleable.MenuLibraryClass_secondMenuItemColor,0);
-        if(backgroundResId != 0)
-            menuItems[1].setBackgroundResource(backgroundResId);
-        backgroundResId = arr.getResourceId(R.styleable.MenuLibraryClass_thirdMenuItemColor,0);
-        if(backgroundResId != 0)
-            menuItems[2].setBackgroundResource(backgroundResId);
-        backgroundResId = arr.getResourceId(R.styleable.MenuLibraryClass_fourthMenuItemColor,0);
-        if(backgroundResId != 0)
-            menuItems[3].setBackgroundResource(backgroundResId);
-        backgroundResId = arr.getResourceId(R.styleable.MenuLibraryClass_fifthMenuItemColor,0);
-        if(backgroundResId != 0)
-            menuItems[4].setBackgroundResource(backgroundResId);
-
-
-        if(arr.getString(R.styleable.MenuLibraryClass_firstMenuItemDescription) != null)
-            menuItemsDescrpt[0].setText(arr.getString(R.styleable.MenuLibraryClass_firstMenuItemDescription));
-        if(arr.getString(R.styleable.MenuLibraryClass_secondMenuItemDescription) != null)
-            menuItemsDescrpt[1].setText(arr.getString(R.styleable.MenuLibraryClass_secondMenuItemDescription));
-        if(arr.getString(R.styleable.MenuLibraryClass_thirdMenuItemDescription) != null)
-            menuItemsDescrpt[2].setText(arr.getString(R.styleable.MenuLibraryClass_thirdMenuItemDescription));
-        if(arr.getString(R.styleable.MenuLibraryClass_fourthMenuItemDescription) != null)
-            menuItemsDescrpt[3].setText(arr.getString(R.styleable.MenuLibraryClass_fourthMenuItemDescription));
-        if(arr.getString(R.styleable.MenuLibraryClass_fifthMenuItemDescription) != null)
-            menuItemsDescrpt[4].setText(arr.getString(R.styleable.MenuLibraryClass_fifthMenuItemDescription));
-
-        arr.recycle();
-    }
-
     public void setFragmentsAndFragmentManager (@Nullable Fragment[] fragments,@Nullable FragmentManager fragmentManager){
         this.fragments = fragments;
         this.fragmentManager = fragmentManager;
@@ -215,22 +167,22 @@ public class MenuLibraryClass extends RelativeLayout {
 
 
 
-    private void changeMenuState(MenuCommand menuCommand){
-        if(menuCommand == MenuCommand.OPEN ) {
-            menuItemRootOpened.setVisibility(VISIBLE);
-            for (int i = 0; i < menuItems.length; i++) {
-                menuItems[i].setClickable(true);
-                menuItems[i].setVisibility(VISIBLE);
-            }
-        }else {
-            for (int i = 0; i < menuItems.length; i++) {
-                menuItems[i].setClickable(false);
-                menuItems[i].setVisibility(GONE);
-            }
-            menuItemRootOpened.setVisibility(GONE);
-        }
-
-    }
+//    private void changeMenuState(MenuCommand menuCommand){
+//        if(menuCommand == MenuCommand.OPEN ) {
+//            menuItemRootOpened.setVisibility(VISIBLE);
+//            for (int i = 0; i < menuItems.length; i++) {
+//                menuItems[i].setClickable(true);
+//                menuItems[i].setVisibility(VISIBLE);
+//            }
+//        }else {
+//            for (int i = 0; i < menuItems.length; i++) {
+//                menuItems[i].setClickable(false);
+//                menuItems[i].setVisibility(GONE);
+//            }
+//            menuItemRootOpened.setVisibility(GONE);
+//        }
+//
+//    }
 
     private void setOnClickListeners(){
         openMenuButton.setOnClickListener(new OnClickListener() {
@@ -277,6 +229,54 @@ public class MenuLibraryClass extends RelativeLayout {
         menuItemsIcon[4] = findViewById(R.id.menu_item_5_image);
 
 
+    }
+
+    private void setAttFromXML(TypedArray arr){
+        int iconResId = arr.getResourceId(R.styleable.MenuLibraryClass_firstMenuItemIcon,0);
+        if(iconResId != 0)
+            menuItemsIcon[0].setImageResource(iconResId);
+        iconResId = arr.getResourceId(R.styleable.MenuLibraryClass_secondMenuItemIcon,0);
+        if(iconResId != 0)
+            menuItemsIcon[1].setImageResource(iconResId);
+        iconResId = arr.getResourceId(R.styleable.MenuLibraryClass_thirdMenuItemIcon,0);
+        if(iconResId != 0)
+            menuItemsIcon[2].setImageResource(iconResId);
+        iconResId = arr.getResourceId(R.styleable.MenuLibraryClass_fourthMenuItemIcon,0);
+        if(iconResId != 0)
+            menuItemsIcon[3].setImageResource(iconResId);
+        iconResId = arr.getResourceId(R.styleable.MenuLibraryClass_fifthMenuItemIcon,0);
+        if(iconResId != 0)
+            menuItemsIcon[4].setImageResource(iconResId);
+
+        int backgroundResId = arr.getResourceId(R.styleable.MenuLibraryClass_firstMenuItemColor,0);
+        if(backgroundResId != 0)
+            menuItems[0].setBackgroundResource(backgroundResId);
+        backgroundResId = arr.getResourceId(R.styleable.MenuLibraryClass_secondMenuItemColor,0);
+        if(backgroundResId != 0)
+            menuItems[1].setBackgroundResource(backgroundResId);
+        backgroundResId = arr.getResourceId(R.styleable.MenuLibraryClass_thirdMenuItemColor,0);
+        if(backgroundResId != 0)
+            menuItems[2].setBackgroundResource(backgroundResId);
+        backgroundResId = arr.getResourceId(R.styleable.MenuLibraryClass_fourthMenuItemColor,0);
+        if(backgroundResId != 0)
+            menuItems[3].setBackgroundResource(backgroundResId);
+        backgroundResId = arr.getResourceId(R.styleable.MenuLibraryClass_fifthMenuItemColor,0);
+        if(backgroundResId != 0)
+            menuItems[4].setBackgroundResource(backgroundResId);
+
+
+        if(arr.getString(R.styleable.MenuLibraryClass_firstMenuItemDescription) != null)
+            menuItemsDescrpt[0].setText(arr.getString(R.styleable.MenuLibraryClass_firstMenuItemDescription));
+        if(arr.getString(R.styleable.MenuLibraryClass_secondMenuItemDescription) != null)
+            menuItemsDescrpt[1].setText(arr.getString(R.styleable.MenuLibraryClass_secondMenuItemDescription));
+        if(arr.getString(R.styleable.MenuLibraryClass_thirdMenuItemDescription) != null)
+            menuItemsDescrpt[2].setText(arr.getString(R.styleable.MenuLibraryClass_thirdMenuItemDescription));
+        if(arr.getString(R.styleable.MenuLibraryClass_fourthMenuItemDescription) != null)
+            menuItemsDescrpt[3].setText(arr.getString(R.styleable.MenuLibraryClass_fourthMenuItemDescription));
+        if(arr.getString(R.styleable.MenuLibraryClass_fifthMenuItemDescription) != null)
+            menuItemsDescrpt[4].setText(arr.getString(R.styleable.MenuLibraryClass_fifthMenuItemDescription));
+
+        arr.recycle();
     }
 
 }
