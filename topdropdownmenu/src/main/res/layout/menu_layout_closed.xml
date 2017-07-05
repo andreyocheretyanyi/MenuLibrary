@@ -10,7 +10,7 @@
       app:contentInsetStart="0dp"
       android:layout_width="match_parent"
       android:layout_height="?actionBarSize"
-      android:background="@color/color_cyan"
+      android:background="@color/color_cyan_l"
       android:id="@+id/toolbarInMain">
 
       <RelativeLayout
@@ -18,9 +18,9 @@
         android:layout_height="match_parent">
 
         <ImageButton
+            android:src="@mipmap/ic_open_menu"
           android:id="@+id/button_open_menu"
           android:layout_centerInParent="true"
-          android:src="@mipmap/ic_launcher"
           android:background="@null"
           android:layout_width="wrap_content"
           android:layout_height="match_parent"/>

@@ -7,15 +7,20 @@
     tools:context="ua.com.codeasylum.menulibrary.MainActivity">
 
 
-    <ua.com.codeasylum.menulibrary.MenuLibraryClass
+    <ua.com.codeasylum.topdropdownmenu.MenuLibraryClass
         android:id="@+id/menu"
+        app:fifthMenuItemIcon="@mipmap/ic_launcher"
+        app:firstMenuItemIcon="@mipmap/ic_launcher"
+        app:secondMenuItemIcon="@mipmap/ic_launcher"
+        app:thirdMenuItemIcon="@mipmap/ic_launcher"
+        app:fourthMenuItemIcon="@mipmap/ic_launcher"
         app:fifthMenuItemDescription="@string/fi"
         app:firstMenuItemDescription="@string/f"
-        app:firstMenuItemColor="@color/color_cyan"
-        app:secondMenuItemColor="@color/color_cyan"
-        app:thirdMenuItemColor="@color/color_cyan"
-        app:fourthMenuItemColor="@color/color_cyan"
-        app:fifthMenuItemColor="@color/color_cyan"
+        app:firstMenuItemColor="@color/color_cyan_l"
+        app:secondMenuItemColor="@color/color_cyan_l"
+        app:thirdMenuItemColor="@color/color_cyan_l"
+        app:fourthMenuItemColor="@color/color_cyan_l"
+        app:fifthMenuItemColor="@color/color_cyan_l"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

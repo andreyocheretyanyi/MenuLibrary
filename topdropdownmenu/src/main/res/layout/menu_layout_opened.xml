@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-  android:background="@color/color_cyan"
+  android:background="@color/color_cyan_l"
   android:visibility="gone"
   android:id="@+id/main_menu_root_open"
   xmlns:android="http://schemas.android.com/apk/res/android"
@@ -12,7 +12,7 @@
   <LinearLayout
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/color_gray_dark"
+    android:background="@color/color_gray_dark_l"
     android:clickable="false"
     android:visibility="invisible"
     android:id="@+id/item_menu_1"
@@ -25,7 +25,6 @@
         android:id="@+id/menu_item_1_image"
       android:layout_width="50dp"
       android:layout_height="50dp"
-      android:src="@mipmap/ic_launcher"
       android:layout_marginBottom="0dp"/>
     <TextView
         android:id="@+id/menu_item_1_description"
@@ -40,7 +39,7 @@
   <LinearLayout
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/color_orange_pastel"
+    android:background="@color/color_orange_pastel_l"
     android:clickable="false"
     android:visibility="invisible"
     android:id="@+id/item_menu_2"
@@ -51,8 +50,7 @@
     <ImageView
         android:id="@+id/menu_item_2_image"
       android:layout_width="50dp"
-      android:layout_height="50dp"
-      android:src="@mipmap/ic_launcher"/>
+      android:layout_height="50dp"/>
     <TextView
         android:id="@+id/menu_item_2_description"
       style="@style/textViewInMenu"
@@ -66,7 +64,7 @@
   <LinearLayout
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/color_orange_pastel_light"
+    android:background="@color/color_orange_pastel_light_l"
     android:clickable="false"
     android:visibility="invisible"
     android:id="@+id/item_menu_3"
@@ -77,8 +75,7 @@
     <ImageView
         android:id="@+id/menu_item_3_image"
       android:layout_width="50dp"
-      android:layout_height="50dp"
-      android:src="@mipmap/ic_launcher"/>
+      android:layout_height="50dp" />
     <TextView
         android:id="@+id/menu_item_3_description"
       style="@style/textViewInMenu"
@@ -90,7 +87,7 @@
   <LinearLayout
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/color_azure_mut"
+    android:background="@color/color_azure_mut_l"
     android:clickable="false"
     android:visibility="invisible"
     android:id="@+id/item_menu_4"
@@ -101,8 +98,7 @@
     <ImageView
         android:id="@+id/menu_item_4_image"
       android:layout_width="50dp"
-      android:layout_height="50dp"
-      android:src="@mipmap/ic_launcher"/>
+      android:layout_height="50dp" />
     <TextView
         android:id="@+id/menu_item_4_description"
       style="@style/textViewInMenu"
@@ -115,7 +111,7 @@
   <LinearLayout
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/color_cyan"
+    android:background="@color/color_cyan_l"
     android:clickable="false"
     android:id="@+id/item_menu_5"
     android:layout_weight="1"
@@ -125,9 +121,7 @@
     <ImageView
         android:id="@+id/menu_item_5_image"
       android:layout_width="50dp"
-      android:layout_height="50dp"
-      android:src="@mipmap/ic_launcher"
-/>
+      android:layout_height="50dp" />
     <TextView
         android:id="@+id/menu_item_5_description"
       style="@style/textViewInMenu"

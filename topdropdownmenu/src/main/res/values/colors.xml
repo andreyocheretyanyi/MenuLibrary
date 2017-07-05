@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="color_gray_dark_l">#7e7e7e</color>
+    <color name="color_orange_pastel_l">#ffdaa3</color>
+    <color name="color_orange_pastel_light_l">#fee6c3</color>
+    <color name="color_azure_mut_l">#d2e3e4</color>
+    <color name="color_cyan_l">#aedeff</color>
+    <color name="color_gray_dark_transparent_l">#2a7e7e7e</color>
+</resources>

@@ -1,4 +1,4 @@
-package ua.com.codeasylum.menulibrary;
+package ua.com.codeasylum.topdropdownmenu;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

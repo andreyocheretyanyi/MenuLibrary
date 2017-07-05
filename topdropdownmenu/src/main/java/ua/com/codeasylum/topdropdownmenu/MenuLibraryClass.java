@@ -1,4 +1,4 @@
-package ua.com.codeasylum.menulibrary;
+package ua.com.codeasylum.topdropdownmenu;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,7 +9,6 @@ import android.support.annotation.StringRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
