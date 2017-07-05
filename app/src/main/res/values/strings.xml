@@ -2,5 +2,9 @@
     <string name="app_name">MenuLibrary</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="f">1</string>
+    <string name="s">2</string>
+    <string name="t">3</string>
+    <string name="fo">4</string>
+    <string name="fi">5</string>
 </resources>

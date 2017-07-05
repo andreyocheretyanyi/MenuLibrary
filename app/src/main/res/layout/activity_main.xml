@@ -9,6 +9,13 @@
 
     <ua.com.codeasylum.menulibrary.MenuLibraryClass
         android:id="@+id/menu"
+        app:fifthMenuItemDescription="@string/fi"
+        app:firstMenuItemDescription="@string/f"
+        app:firstMenuItemColor="@color/color_cyan"
+        app:secondMenuItemColor="@color/color_cyan"
+        app:thirdMenuItemColor="@color/color_cyan"
+        app:fourthMenuItemColor="@color/color_cyan"
+        app:fifthMenuItemColor="@color/color_cyan"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

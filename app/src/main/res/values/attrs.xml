@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MenuLibraryClass">
+        <attr name="firstMenuItemIcon" format="reference"/>
+        <attr name="secondMenuItemIcon" format="reference"/>
+        <attr name="thirdMenuItemIcon" format="reference"/>
+        <attr name="fourthMenuItemIcon" format="reference"/>
+        <attr name="fifthMenuItemIcon" format="reference"/>
+        <attr name="firstMenuItemDescription" format="string"/>
+        <attr name="secondMenuItemDescription" format="string"/>
+        <attr name="thirdMenuItemDescription" format="string"/>
+        <attr name="fourthMenuItemDescription" format="string"/>
+        <attr name="fifthMenuItemDescription" format="string"/>
+        <attr name="firstMenuItemColor" format="color|reference"/>
+        <attr name="secondMenuItemColor" format="color|reference"/>
+        <attr name="thirdMenuItemColor" format="color|reference"/>
+        <attr name="fourthMenuItemColor" format="color|reference"/>
+        <attr name="fifthMenuItemColor" format="color|reference"/>
+    </declare-styleable>
+</resources>
