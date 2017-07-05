@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  android:background="@color/color_cyan"
+  android:visibility="gone"
+  android:id="@+id/main_menu_root_open"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/color_gray_dark"
+    android:clickable="false"
+    android:visibility="invisible"
+    android:id="@+id/item_menu_1"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/menu_item_1_image"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@mipmap/ic_launcher"
+      android:layout_marginBottom="0dp"/>
+    <TextView
+        android:id="@+id/menu_item_1_description"
+      style="@style/textViewInMenu"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="P1"
+      tools:layout_constraintBottom_creator="1"
+      android:layout_marginBottom="0dp"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/color_orange_pastel"
+    android:clickable="false"
+    android:visibility="invisible"
+    android:id="@+id/item_menu_2"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/menu_item_2_image"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/menu_item_2_description"
+      style="@style/textViewInMenu"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="P2"
+      tools:layout_editor_absoluteY="0dp"
+      tools:layout_editor_absoluteX="8dp"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/color_orange_pastel_light"
+    android:clickable="false"
+    android:visibility="invisible"
+    android:id="@+id/item_menu_3"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/menu_item_3_image"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/menu_item_3_description"
+      style="@style/textViewInMenu"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="P3"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/color_azure_mut"
+    android:clickable="false"
+    android:visibility="invisible"
+    android:id="@+id/item_menu_4"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/menu_item_4_image"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/menu_item_4_description"
+      style="@style/textViewInMenu"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="P4"
+/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/color_cyan"
+    android:clickable="false"
+    android:id="@+id/item_menu_5"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/menu_item_5_image"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@mipmap/ic_launcher"
+/>
+    <TextView
+        android:id="@+id/menu_item_5_description"
+      style="@style/textViewInMenu"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="P5"/>
+  </LinearLayout>
+
+
+</LinearLayout>
